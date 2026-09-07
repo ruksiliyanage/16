@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>16 MART — Curated by 16</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,26 +32,29 @@
       font-family: 'Montserrat', sans-serif;
       background-color: var(--bg-light);
       color: var(--text-dark);
-      line-height: 1.6;
+      line-height: 1.5;
+      overflow-x: hidden;
+      width: 100%;
     }
 
     /* Top Announcement Bar */
     .top-bar {
       background-color: var(--deep-teal);
       color: #FFFFFF;
-      font-size: 0.72rem;
-      letter-spacing: 1.5px;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
       text-transform: uppercase;
       font-weight: 500;
       text-align: center;
-      padding: 0.6rem 1rem;
+      padding: 0.5rem 0.8rem;
+      line-height: 1.4;
     }
     .top-bar span {
       color: #FFA578;
       font-weight: 700;
     }
 
-    /* Header */
+    /* Header & Navigation */
     header {
       background-color: var(--surface-white);
       border-bottom: 1px solid var(--border-subtle);
@@ -62,16 +65,16 @@
     .header-inner {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 1.2rem 2rem;
+      padding: 0.9rem 1.2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
     .logo {
       font-family: 'Playfair Display', serif;
-      font-size: 1.7rem;
+      font-size: 1.45rem;
       font-weight: 700;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       color: var(--deep-teal);
       text-decoration: none;
     }
@@ -80,15 +83,15 @@
     }
     .nav-links {
       display: flex;
-      gap: 2.5rem;
+      gap: 2rem;
       list-style: none;
     }
     .nav-links a {
       text-decoration: none;
       color: var(--text-dark);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
       transition: color 0.2s ease;
     }
@@ -97,56 +100,52 @@
     }
     .header-icons {
       display: flex;
-      gap: 1.2rem;
+      gap: 0.6rem;
       align-items: center;
     }
     .header-icons span {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       border-radius: 50%;
       background: #F3EFEA;
       cursor: pointer;
-      font-size: 0.85rem;
-      transition: all 0.2s;
-    }
-    .header-icons span:hover {
-      background: var(--accent-orange-soft);
-      color: var(--accent-orange);
+      font-size: 0.8rem;
     }
 
-    /* Value Proposition Bar */
+    /* Trust / Features Bar */
     .trust-strip {
       background-color: var(--surface-white);
       border-bottom: 1px solid var(--border-subtle);
-      padding: 1rem 2rem;
+      padding: 0.75rem 1rem;
     }
     .trust-grid {
       max-width: 1280px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
+      gap: 0.8rem;
       text-align: center;
-      font-size: 0.75rem;
-      letter-spacing: 1px;
+      font-size: 0.7rem;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
       font-weight: 600;
       color: var(--text-muted);
     }
     .trust-grid div span {
       color: var(--accent-orange);
-      margin-right: 4px;
+      margin-right: 2px;
     }
 
-    /* Hero Section with Mini Blender Background */
+    /* Hero Section */
     .hero-banner {
       position: relative;
-      min-height: 560px;
-      background: linear-gradient(to right, #FBF9F6 36%, rgba(251, 249, 246, 0.9) 62%, rgba(251, 249, 246, 0.18) 100%), 
-                  url('https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=1600&q=80');
+      min-height: 520px;
+      background-image: 
+        linear-gradient(to right, rgba(251, 249, 246, 0.96) 0%, rgba(251, 249, 246, 0.88) 55%, rgba(251, 249, 246, 0.25) 100%), 
+        url('https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=1200&q=80');
       background-size: cover;
       background-position: center right;
       display: flex;
@@ -156,42 +155,37 @@
       max-width: 1280px;
       width: 100%;
       margin: 0 auto;
-      padding: 3.5rem 2rem;
+      padding: 2.5rem 1.2rem;
     }
     .hero-text-box {
-      max-width: 600px;
+      max-width: 580px;
     }
     .hero-badge {
       display: inline-block;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 1.5px;
       font-weight: 700;
       background-color: var(--accent-orange-soft);
       color: var(--accent-orange);
-      border: 1px solid rgba(230, 95, 43, 0.3);
-      padding: 0.3rem 0.8rem;
+      border: 1px solid rgba(230, 95, 43, 0.25);
+      padding: 0.3rem 0.7rem;
       border-radius: 4px;
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.9rem;
     }
     .hero-title {
       font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
+      font-size: 2.3rem;
       font-weight: 600;
       line-height: 1.2;
       color: var(--deep-teal);
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.9rem;
     }
     .hero-desc {
-      font-size: 0.95rem;
-      line-height: 1.8;
-      color: #333333;
-      margin-bottom: 2rem;
-    }
-    .hero-actions {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: #2D3748;
+      margin-bottom: 1.6rem;
     }
     .btn-orange {
       display: inline-block;
@@ -199,42 +193,42 @@
       color: #FFFFFF;
       font-size: 0.75rem;
       font-weight: 600;
-      letter-spacing: 2px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      padding: 1rem 2.2rem;
+      padding: 0.9rem 1.8rem;
       border-radius: 4px;
       text-decoration: none;
+      text-align: center;
       transition: all 0.2s ease;
-      box-shadow: 0 4px 14px rgba(230, 95, 43, 0.25);
+      box-shadow: 0 4px 12px rgba(230, 95, 43, 0.25);
     }
     .btn-orange:hover {
       background-color: var(--accent-orange-hover);
-      transform: translateY(-2px);
     }
 
     /* Container */
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 5rem 2rem;
+      padding: 3rem 1.2rem;
     }
 
     /* Category Blocks */
     .split-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-bottom: 5.5rem;
+      gap: 1.2rem;
+      margin-bottom: 3.5rem;
     }
     .split-card {
       position: relative;
-      height: 360px;
+      height: 280px;
       border-radius: 6px;
       overflow: hidden;
       display: flex;
       align-items: flex-end;
       text-decoration: none;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
     .split-card img {
       position: absolute;
@@ -246,24 +240,24 @@
       transition: transform 0.4s ease;
     }
     .split-card:hover img {
-      transform: scale(1.04);
+      transform: scale(1.03);
     }
     .split-card-content {
       position: relative;
-      background: linear-gradient(to top, rgba(11, 60, 61, 0.95) 0%, rgba(11, 60, 61, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
+      background: linear-gradient(to top, rgba(11, 60, 61, 0.95) 0%, rgba(11, 60, 61, 0.45) 60%, rgba(0, 0, 0, 0) 100%);
       width: 100%;
-      padding: 3rem 2rem 1.8rem;
+      padding: 2rem 1.2rem 1.2rem;
       color: #FFFFFF;
     }
     .split-card-content h3 {
       font-family: 'Playfair Display', serif;
-      font-size: 1.65rem;
-      margin-bottom: 0.35rem;
+      font-size: 1.35rem;
+      margin-bottom: 0.2rem;
       font-weight: 500;
     }
     .split-card-content p {
-      font-size: 0.75rem;
-      letter-spacing: 1.5px;
+      font-size: 0.72rem;
+      letter-spacing: 1px;
       text-transform: uppercase;
       color: #FFA578;
       font-weight: 600;
@@ -272,20 +266,20 @@
     /* Section Headings */
     .section-head {
       text-align: center;
-      margin-bottom: 3.5rem;
+      margin-bottom: 2.2rem;
     }
     .section-subtitle {
-      font-size: 0.78rem;
-      letter-spacing: 2px;
+      font-size: 0.72rem;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
       color: var(--accent-orange);
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3rem;
       display: block;
     }
     .section-title {
       font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       font-weight: 600;
       color: var(--deep-teal);
     }
@@ -294,8 +288,8 @@
     .product-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.8rem;
-      margin-bottom: 5rem;
+      gap: 1.2rem;
+      margin-bottom: 3.5rem;
     }
     .product-card {
       background-color: var(--surface-white);
@@ -304,66 +298,64 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding: 1.25rem;
+      padding: 1rem 0.8rem;
       position: relative;
-      transition: box-shadow 0.2s ease, transform 0.2s ease;
-    }
-    .product-card:hover {
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-      transform: translateY(-3px);
     }
     .badge-tag {
       position: absolute;
-      top: 1rem;
-      left: 1rem;
-      font-size: 0.65rem;
-      letter-spacing: 1px;
+      top: 0.7rem;
+      left: 0.7rem;
+      font-size: 0.62rem;
+      letter-spacing: 0.5px;
       text-transform: uppercase;
       background-color: var(--accent-orange-soft);
       color: var(--accent-orange);
-      border: 1px solid rgba(230, 95, 43, 0.2);
+      border: 1px solid rgba(230, 95, 43, 0.25);
       border-radius: 3px;
-      padding: 0.3rem 0.65rem;
+      padding: 0.2rem 0.45rem;
       font-weight: 700;
+      z-index: 1;
     }
     .product-img {
       width: 100%;
-      height: 220px;
+      height: 180px;
       object-fit: cover;
-      margin-bottom: 1.2rem;
+      margin-bottom: 0.9rem;
       background-color: #f7f7f7;
+      border-radius: 4px;
     }
     .product-cat {
-      font-size: 0.7rem;
-      letter-spacing: 1.5px;
+      font-size: 0.65rem;
+      letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--text-muted);
-      margin-bottom: 0.35rem;
+      margin-bottom: 0.25rem;
       font-weight: 600;
     }
     .product-name {
       font-family: 'Playfair Display', serif;
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       font-weight: 600;
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.3rem;
       color: var(--text-dark);
+      line-height: 1.3;
     }
     .product-price {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 700;
       color: var(--deep-teal);
-      margin-bottom: 1.3rem;
+      margin-bottom: 0.9rem;
     }
     .btn-buy {
       margin-top: auto;
       background-color: transparent;
       border: 1.5px solid var(--accent-orange);
       color: var(--accent-orange);
-      font-size: 0.72rem;
-      letter-spacing: 1.5px;
+      font-size: 0.68rem;
+      letter-spacing: 1px;
       text-transform: uppercase;
       font-weight: 700;
-      padding: 0.75rem 0.5rem;
+      padding: 0.65rem 0.4rem;
       border-radius: 4px;
       text-decoration: none;
       transition: all 0.2s ease;
@@ -376,43 +368,43 @@
     /* Concept Strip */
     .concept-strip {
       background-color: #F3EFE8;
-      border-radius: 12px;
-      padding: 3.5rem 2.5rem;
-      margin-bottom: 5rem;
+      border-radius: 8px;
+      padding: 2.2rem 1.2rem;
+      margin-bottom: 3.5rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
+      gap: 1.4rem;
       text-align: center;
     }
     .concept-item h4 {
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       font-weight: 700;
       color: var(--deep-teal);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
     }
     .concept-item p {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     /* Floating WhatsApp Button */
     .whatsapp-btn {
       position: fixed;
-      bottom: 25px;
-      right: 25px;
+      bottom: 20px;
+      right: 20px;
       background-color: var(--wa-green);
       color: #FFFFFF;
-      padding: 0.85rem 1.4rem;
+      padding: 0.75rem 1.1rem;
       border-radius: 50px;
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 0.5rem;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.82rem;
-      letter-spacing: 0.5px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      font-size: 0.78rem;
+      letter-spacing: 0.4px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.22);
       z-index: 1000;
     }
 
@@ -420,92 +412,200 @@
     footer {
       background-color: var(--deep-teal);
       color: #ECE8E1;
-      padding: 4.5rem 2rem 2.5rem;
-      font-size: 0.85rem;
+      padding: 3.2rem 1.2rem 2rem;
+      font-size: 0.82rem;
     }
     .footer-inner {
       max-width: 1280px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1.5fr;
-      gap: 3.5rem;
-      margin-bottom: 3.5rem;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
     }
     .footer-logo {
       font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       letter-spacing: 2px;
       color: #FFFFFF;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
     }
     .footer-logo span {
       color: var(--accent-orange);
     }
     .footer-desc {
       color: #B2C4C4;
-      line-height: 1.7;
-      max-width: 320px;
+      line-height: 1.6;
+      font-size: 0.82rem;
     }
     .footer-col h5 {
       color: #FFFFFF;
-      font-size: 0.78rem;
-      letter-spacing: 2px;
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
-      margin-bottom: 1.3rem;
+      margin-bottom: 0.9rem;
       font-weight: 600;
     }
     .footer-col ul {
       list-style: none;
     }
     .footer-col ul li {
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.5rem;
     }
     .footer-col a {
       color: #B2C4C4;
       text-decoration: none;
-      transition: color 0.2s;
-    }
-    .footer-col a:hover {
-      color: var(--accent-orange);
+      font-size: 0.8rem;
     }
     .footer-bottom {
       border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding-top: 2rem;
+      padding-top: 1.5rem;
       text-align: center;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       color: #7E9797;
-      letter-spacing: 0.5px;
     }
 
-    /* Responsive */
+    /* ====================================================
+       MOBILE & TABLET RESPONSIVE FIXES
+       ==================================================== */
+
+    /* Tablets & Small Laptops (<= 992px) */
     @media (max-width: 992px) {
-      .product-grid { grid-template-columns: repeat(2, 1fr); }
-      .trust-grid { grid-template-columns: repeat(2, 1fr); row-gap: 1rem; }
-      .split-grid { grid-template-columns: 1fr; }
-      .concept-strip { grid-template-columns: 1fr 1fr; }
-      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0.6rem;
+      }
+      .concept-strip {
+        grid-template-columns: 1fr 1fr;
+      }
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
     }
+
+    /* Mobile Devices (<= 768px) */
     @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .hero-title { font-size: 2.2rem; }
-      .hero-banner { min-height: 480px; }
-      .footer-inner { grid-template-columns: 1fr; }
+      .nav-links {
+        display: none; /* Collapses wide desktop bar */
+      }
+
+      /* Hero Mobile: stacking background & full readability */
+      .hero-banner {
+        min-height: auto;
+        padding: 2.5rem 0 3rem;
+        background-image: 
+          linear-gradient(to bottom, rgba(251, 249, 246, 0.96) 0%, rgba(251, 249, 246, 0.92) 80%, rgba(251, 249, 246, 0.85) 100%), 
+          url('https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=800&q=80');
+        background-position: center bottom;
+      }
+      .hero-title {
+        font-size: 1.85rem;
+        line-height: 1.25;
+      }
+      .hero-desc {
+        font-size: 0.85rem;
+      }
+      .btn-orange {
+        width: 100%; /* Easy thumb-tap CTA */
+        display: block;
+        padding: 0.85rem 1rem;
+      }
+
+      /* Categories full width on mobile */
+      .split-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 2.8rem;
+      }
+      .split-card {
+        height: 220px;
+      }
+
+      /* Product Grid: 2 items per row with mobile touch targets */
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        margin-bottom: 2.8rem;
+      }
+      .product-card {
+        padding: 0.7rem 0.5rem;
+      }
+      .product-img {
+        height: 140px;
+        margin-bottom: 0.6rem;
+      }
+      .product-name {
+        font-size: 0.82rem;
+        min-height: 2.4em; /* Aligns buttons across rows */
+      }
+      .product-price {
+        font-size: 0.82rem;
+        margin-bottom: 0.6rem;
+      }
+      .btn-buy {
+        padding: 0.55rem 0.2rem;
+        font-size: 0.62rem;
+      }
+
+      /* Concept strip single column on mobile */
+      .concept-strip {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        padding: 1.8rem 1rem;
+      }
+
+      /* Footer stacked */
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+
+      /* Floating WhatsApp Button compact for small screens */
+      .whatsapp-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 0.65rem 0.95rem;
+        font-size: 0.72rem;
+      }
+    }
+
+    /* Very Small Screens (<= 480px) */
+    @media (max-width: 480px) {
+      .trust-grid {
+        grid-template-columns: 1fr;
+        font-size: 0.65rem;
+      }
+      .hero-title {
+        font-size: 1.65rem;
+      }
+      .header-inner {
+        padding: 0.75rem 1rem;
+      }
+      .logo {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
 <body>
 
+  <!-- Top Announcement Bar -->
   <div class="top-bar">
-    16 Curated Essentials • Representing 16 Members • <span>Order via WhatsApp & Social Channels</span>
+    16 Curated Essentials • <span>Order via WhatsApp & Social Channels</span>
   </div>
 
+  <!-- Header -->
   <header>
     <div class="header-inner">
       <a href="#" class="logo">16 <span>MART</span></a>
       <ul class="nav-links">
         <li><a href="#collection">The 16 Collection</a></li>
-        <li><a href="#home">Home Accessories</a></li>
-        <li><a href="#beauty">Beauty Accessories</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#beauty">Beauty</a></li>
         <li><a href="#story">Our Concept</a></li>
       </ul>
       <div class="header-icons">
@@ -515,48 +615,50 @@
     </div>
   </header>
 
+  <!-- Value Propositions Banner -->
   <div class="trust-strip">
     <div class="trust-grid">
-      <div><span>✦</span> 16 Handpicked Essentials</div>
+      <div><span>✦</span> 16 Handpicked Items</div>
       <div><span>✦</span> 16 Founding Members</div>
-      <div><span>✦</span> Instagram • TikTok • FB</div>
-      <div><span>✦</span> Fast WhatsApp Ordering</div>
+      <div><span>✦</span> Islandwide Delivery</div>
+      <div><span>✦</span> Fast WhatsApp Order</div>
     </div>
   </div>
 
+  <!-- Hero Section -->
   <section class="hero-banner">
     <div class="hero-content">
       <div class="hero-text-box">
         <span class="hero-badge">Curated Concept</span>
         <h1 class="hero-title">16 Finds. Handpicked by 16 of Us.</h1>
         <p class="hero-desc">
-          <strong>16 Mart</strong> is an online marketplace offering affordable, functional, and trendy lifestyle essentials across Instagram, TikTok, Facebook, and WhatsApp. Our store features <strong>16 unique products</strong> representing the <strong>16 members of our group</strong>, curated across high-demand Home and Beauty Accessories.
+          <strong>16 Mart</strong> is an online marketplace offering affordable, functional, and trendy lifestyle essentials across Instagram, TikTok, Facebook, and WhatsApp. Featuring <strong>16 unique products</strong> representing the <strong>16 members of our group</strong> across Home and Beauty Accessories.
         </p>
-        <div class="hero-actions">
-          <a href="#collection" class="btn-orange">Explore The 16 Collection →</a>
-        </div>
+        <a href="#collection" class="btn-orange">Explore The 16 Collection →</a>
       </div>
     </div>
   </section>
 
   <main class="container">
+    <!-- Category Split Blocks -->
     <section class="split-grid">
       <a href="#home" class="split-card">
         <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Home Accessories">
         <div class="split-card-content">
           <h3>Home Accessories</h3>
-          <p>Tools like Mini Blenders & Gadgets →</p>
+          <p>Mini Blenders & Everyday Gadgets →</p>
         </div>
       </a>
       <a href="#beauty" class="split-card">
         <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Beauty Accessories">
         <div class="split-card-content">
           <h3>Beauty Accessories</h3>
-          <p>Tools like Derma Rollers & Self-Care →</p>
+          <p>Derma Rollers & Self-Care Tools →</p>
         </div>
       </a>
     </section>
 
+    <!-- The 16 Collection Grid -->
     <section id="collection">
       <div class="section-head">
         <span class="section-subtitle">Capsule Collection</span>
@@ -564,68 +666,75 @@
       </div>
 
       <div class="product-grid">
+        <!-- Item 01 -->
         <div class="product-card">
           <span class="badge-tag">01 / 16</span>
           <img class="product-img" src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=600&q=80" alt="Mini Portable Blender">
           <div class="product-cat">Home Accessories</div>
           <div class="product-name">Mini Portable Blender</div>
           <div class="product-price">Rs. 3,490</div>
-          <a href="https://wa.me/?text=Hi%2016%20Mart,%20I%20want%20to%20order%2001/16%20Mini%20Blender" class="btn-buy">Order via WhatsApp</a>
+          <a href="https://wa.me/?text=Hi%2016%20Mart,%20I%20want%20to%20order%2001/16%20Mini%20Blender" class="btn-buy">Order WhatsApp</a>
         </div>
 
+        <!-- Item 02 -->
         <div class="product-card">
           <span class="badge-tag">02 / 16</span>
           <img class="product-img" src="https://images.unsplash.com/photo-1512290900672-1f5be6349942?auto=format&fit=crop&w=600&q=80" alt="Derma Roller">
           <div class="product-cat">Beauty Accessories</div>
           <div class="product-name">Micro-Needle Derma Roller</div>
           <div class="product-price">Rs. 1,990</div>
-          <a href="https://wa.me/?text=Hi%2016%20Mart,%20I%20want%20to%20order%2002/16%20Derma%20Roller" class="btn-buy">Order via WhatsApp</a>
+          <a href="https://wa.me/?text=Hi%2016%20Mart,%20I%20want%20to%20order%2002/16%20Derma%20Roller" class="btn-buy">Order WhatsApp</a>
         </div>
 
+        <!-- Item 03 -->
         <div class="product-card">
           <span class="badge-tag">03 / 16</span>
           <img class="product-img" src="https://images.unsplash.com/photo-1590159763121-7c9ff3149e0a?auto=format&fit=crop&w=600&q=80" alt="Facial Roller">
           <div class="product-cat">Beauty Accessories</div>
           <div class="product-name">Rose Quartz Facial Tool</div>
           <div class="product-price">Rs. 2,490</div>
-          <a href="https://wa.me/?text=Hi%2016%20Mart,%20I%20want%20to%20order%2003/16%20Facial%20Tool" class="btn-buy">Order via WhatsApp</a>
+          <a href="https://wa.me/?text=Hi%2016%20Mart,%20I%20want%20to%20order%2003/16%20Facial%20Tool" class="btn-buy">Order WhatsApp</a>
         </div>
 
+        <!-- Item 04 -->
         <div class="product-card">
           <span class="badge-tag">04 / 16</span>
           <img class="product-img" src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80" alt="Desk Organizer">
           <div class="product-cat">Home Accessories</div>
           <div class="product-name">Modular Desk Organizer</div>
           <div class="product-price">Rs. 1,850</div>
-          <a href="https://wa.me/?text=Hi%2016%20Mart,%20I%20want%20to%20order%2004/16%20Desk%20Organizer" class="btn-buy">Order via WhatsApp</a>
+          <a href="https://wa.me/?text=Hi%2016%20Mart,%20I%20want%20to%20order%2004/16%20Desk%20Organizer" class="btn-buy">Order WhatsApp</a>
         </div>
       </div>
     </section>
 
+    <!-- Why 16 Mart Concept -->
     <section class="concept-strip">
       <div class="concept-item">
         <h4>16 Members</h4>
-        <p>Representing the 16 founders behind the store, each choosing one daily essential.</p>
+        <p>16 founders behind the store, each choosing one daily essential.</p>
       </div>
       <div class="concept-item">
         <h4>Affordable</h4>
-        <p>Priced for students and young working adults looking for accessible quality.</p>
+        <p>Priced for students and young working adults across Sri Lanka.</p>
       </div>
       <div class="concept-item">
         <h4>Functional & Trendy</h4>
-        <p>Curated specifically across smart Home tools and everyday Beauty accessories.</p>
+        <p>Curated across smart Home tools and everyday Beauty accessories.</p>
       </div>
       <div class="concept-item">
         <h4>Direct Social Flow</h4>
-        <p>Seamless ordering through WhatsApp, Instagram, TikTok, and Facebook.</p>
+        <p>Fast ordering through WhatsApp, Instagram, TikTok, and Facebook.</p>
       </div>
     </section>
   </main>
 
+  <!-- Floating WhatsApp Widget -->
   <a href="https://wa.me/" target="_blank" class="whatsapp-btn">
-    <span>Order on WhatsApp</span>
+    <span>WhatsApp Order</span>
   </a>
 
+  <!-- Footer -->
   <footer id="story">
     <div class="footer-inner">
       <div>
@@ -653,8 +762,8 @@
       </div>
       <div class="footer-col">
         <h5>Quick Orders</h5>
-        <p class="footer-desc" style="margin-bottom: 0.8rem;">Ready to place an order? Contact our sales team directly via WhatsApp.</p>
-        <a href="https://wa.me/" style="color: var(--accent-orange); text-decoration: none; font-weight: 700; letter-spacing: 0.5px;">Chat on WhatsApp →</a>
+        <p class="footer-desc" style="margin-bottom: 0.8rem;">Ready to order? Contact our sales team directly via WhatsApp.</p>
+        <a href="https://wa.me/" style="color: var(--accent-orange); text-decoration: none; font-weight: 700;">Chat on WhatsApp →</a>
       </div>
     </div>
     <div class="footer-bottom">
